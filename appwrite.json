@@ -1,0 +1,24 @@
+{
+    "projectId": "6506360aa212bc24bba3",
+    "projectName": "appwrite_content_type",
+    "functions": [
+        {
+            "$id": "650cbf6898889c05414d",
+            "name": "content_function",
+            "runtime": "dart-2.17",
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "lib/main.dart",
+            "commands": "dart pub get",
+            "ignore": [
+                ".packages",
+                ".dart_tool"
+            ],
+            "path": "functions/content_function"
+        }
+    ]
+}
