@@ -2,9 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 
 Future<dynamic> main(final context) async {
-  final data = jsonDecode(context.req.body);
+  final data = context.req.headers;
+  final responseType = jsonEncode(data['x-custom-type']);
 
-  switch (data['type']) {
+  switch (responseType) {
     case 'json':
       return context.res.json(
           {'type': 'This is a sample JSON response from Appwrite function'});
